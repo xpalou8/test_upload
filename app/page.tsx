@@ -13,7 +13,7 @@ export default function AvatarUploadPage() {
           event.preventDefault();
  
           if (!inputFileRef.current?.files) {
-            throw new Error('No file selected');
+            throw new Error('No File selected');
           }
  
           const file = inputFileRef.current.files[0];
