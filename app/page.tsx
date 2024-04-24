@@ -1,3 +1,5 @@
+'use client';
+ 
 import type { PutBlobResult } from '@vercel/blob';
 import { useState, useRef } from 'react';
  
@@ -13,7 +15,7 @@ export default function AvatarUploadPage() {
           event.preventDefault();
  
           if (!inputFileRef.current?.files) {
-            throw new Error('No File selected');
+            throw new Error('No file selected');
           }
  
           const file = inputFileRef.current.files[0];
